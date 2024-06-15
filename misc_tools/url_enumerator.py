@@ -12,7 +12,7 @@ def url_enum():
             for line in file:
                 line = line.strip()
                 r = requests.get(url+'/'+line)
-                if r.status_code == 200:
+                if r.ok:
                     print(f'(#){url}/{line}')
 
 def title():
