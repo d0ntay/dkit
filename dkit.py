@@ -22,9 +22,11 @@ def tool_select():
         clear_console()
         paste_title()
         try:
-            print('Welcome Back')
-            print('1) Network')
-            print('2) Misc')
+            print('                 ++++++++++++++')
+            print('                 |Welcome Back|')
+            print('                 ++++++++++++++')
+            print('                 1) Network')
+            print('                 2) Misc')
             choice = input()
             if choice == '1':
                 clear_console()
@@ -47,10 +49,12 @@ def network_tools():
     while True:
         paste_title()
         try:
-            print('Network tools')
-            print('0) Back')
-            print('1) Active Hosts')
-            print('2) Port Scanner')
+            print('                 +++++++++++++++')
+            print('                 |Network Tools|')
+            print('                 +++++++++++++++')
+            print('                 0) Back')
+            print('                 1) Active Hosts')
+            print('                 2) Port Scanner')
             choice = input()
             if choice == '1':
                 clear_console()
@@ -76,9 +80,11 @@ def misc_tools():
     while True:
         paste_title()
         try:
-            print('Miscellaneous tools')
-            print('0) Back')
-            print('1) URL Enumerator')
+            print('                 ++++++++++++')
+            print('                 |Misc Tools|')
+            print('                 ++++++++++++')
+            print('                 0) Back')
+            print('                 1) URL Enumerator')
             choice = input()
             if choice == '1':
                 clear_console()
