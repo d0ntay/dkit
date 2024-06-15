@@ -6,7 +6,8 @@ from pyfiglet import Figlet
 def port_scanner():
     title()
     print('Please enter target IP')
-    target = input('Target: ')
+    print('Example : 192.168.1.10')
+    target = input('>')
     target = target.strip()
     while True:
         try:
@@ -48,7 +49,8 @@ def single_scan(target):
     title()
     count = 0
     print('Which port would you like to scan?')
-    port = int(input('Port: ').strip())
+    print('Example : 80')
+    port = int(input('>').strip())
     s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
     s.settimeout(3)
     try:
